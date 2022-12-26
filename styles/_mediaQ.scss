@@ -1,0 +1,25 @@
+main {
+    .carrusel {
+        @media only screen and (max-width: 768px){
+            .carousel{
+                width: 100%;
+            }
+        }
+    }
+    .destacados {
+        .tarjetas {
+            @media only screen and (max-width: 576px){
+                .card{
+                    width: 8rem;
+                }
+            }
+        }
+    }
+    .busqueda {
+        @media only screen and (max-width: 768px){
+            &__imagenes img {
+                @include sizes(9rem,11rem);
+            }
+        }
+    }
+}

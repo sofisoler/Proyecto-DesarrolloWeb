@@ -1,0 +1,10 @@
+.header {
+    grid-area: header;
+}
+
+.sticky {
+    background-color: $color-footer;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}

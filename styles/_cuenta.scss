@@ -1,0 +1,41 @@
+main {
+    section {
+        .formulario {
+            @include flex(column, center, center);
+            h1 {
+                cursor: default;
+                font-size: 1.8rem;
+            }
+            input {
+                display: block;
+                padding-left: 0.2rem;
+                padding-right: 0.2rem;
+                border: none;
+                outline: none;
+            }
+            div {
+                padding-bottom: 0.5rem;
+            }
+            .boton {
+                padding-top: 0.5rem;
+                input {
+                    display: inline-block;
+                    width: 5rem;
+                    background-color: $color-negro;
+                    color: $color-blanco;
+                    border: 1px solid $color-gris-oscuro;
+                    &:hover {
+                        background-color: $color-gris-oscuro;
+                    }
+                }
+            }
+        }
+        div {
+            .lead {
+                cursor: default;
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+    }
+}

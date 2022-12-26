@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    padding: 2rem;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #080808;
+    text-align: left;
+    padding: 2rem;
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #b4b4b4;
+}
+
+/* ----- INDEX ----- */
+
+.sticky {
+    background-color: #080808;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.carrusel {
+    padding-bottom: 2rem;
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 992px){
+    .carrusel{
+        width: 100%;
+    }
+}
+
+.carousel-inner:hover {
+    opacity: 0.8;
+}
+
+.destacados h3 {
+    cursor: default;
+    text-align: center;
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 12rem;
+}
+
+@media only screen and (max-width: 768px){
+    .card{
+        width: 10rem;
+    }
+}
+
+.card:hover {
+    border: 2px solid #737373;
+}
+
+.card-img-top {
+    padding: 0.3rem;
+}
+
+.card-body {
+    display: none;
+    position: absolute;
+    text-align: end;
+}
+
+.card:hover .card-body {
+    display: block;
+    background-color: #ffffff60;
+    width: 100%;
+}
+
+.card-body a {
+    background-color: #000000;
+    border: 2px solid #737373;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card-body a:hover {
+    color: #ffffff;
+    background-color: #737373;
+}
+
+/* ----- INICIAR SESION Y CREAR CUENTA ----- */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario h4 {
+    cursor: default;
+}
+
+.formulario input {
+    display: block;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border: none;
+    outline: none;
+}
+
+.formulario div {
+    padding-bottom: 0.5rem;
+}
+
+.boton {
+    padding-top: 0.5rem;
+}
+
+.boton input {
+    display: inline-block;
+    width: 5rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #737373;
+}
+
+.boton input:hover {
+    background-color: #737373;
+}
+
+div p {
+    cursor: default;
+    text-align: center;
+}
+
+.lead {
+    font-size: 1rem;
+}
+
+/* ----- EXPLORAR ----- */
+
+.busqueda {
+    text-align: center;
+}
+
+.busqueda input {
+    background-color: #000000;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.busqueda ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.busqueda li a {
+    color: #737373;
+}
+
+.busqueda a:active {
+    color: #ffffff;
+}
+
+.busqueda__imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.busqueda__imagenes img {
+    width: 12rem;
+    height: 14rem;
+    padding: 0.2rem;
+}
+
+.busqueda__imagenes img:hover {
+    opacity: 0.6;
+    border: 2px solid #737373;
+}
+
+@media only screen and (min-width: 992px){
+    .busqueda__imagenes{
+        width: 85%;
+    }
+}

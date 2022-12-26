@@ -1,0 +1,52 @@
+main {
+    .carrusel {
+        padding-bottom: 2rem;
+        .carousel {
+            width: 50%;
+            margin: auto;
+            &-inner:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    .destacados {
+        h1 {
+            cursor: default;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .tarjetas {
+            @include flex(row, center, center);
+            .card {
+                width: 12rem;
+                &:hover {
+                    border: 2px solid $color-gris-oscuro;
+                }
+                .card-img-top {
+                    padding: 0.3rem;
+                }
+                .card-body {
+                    display: none;
+                    position: absolute;
+                    text-align: end;
+                    & a {
+                        background-color: $color-negro;
+                        border: 2px solid $color-gris-oscuro;
+                        border-radius: 5px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        &:hover {
+                            color: $color-blanco;
+                            background-color: $color-gris-oscuro;
+                        }
+                    }
+                }
+                &:hover .card-body {
+                    display: block;
+                    background-color: $color-blanco-transparente;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

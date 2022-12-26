@@ -1,0 +1,37 @@
+.footer {
+    grid-area: footer;
+    background-color: $color-footer;
+    text-align: left;
+    padding: 2rem;
+    padding-left: 0;
+    .row {
+        li {
+            display: inline-block;
+            border-left: solid 1px $color-gris-oscuro;
+            cursor: default;
+            &.logo {
+                border: none;
+            }
+            & p {
+                font-weight: 600;
+            }
+            & form {
+                .email {
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    border: none;
+                    outline: none;
+                }
+                .boton {
+                    background-color: $color-negro;
+                    color: $color-blanco;
+                    border: 1px solid $color-gris-oscuro;
+                    margin: 0.3rem;
+                    &:hover {
+                        background-color: $color-gris-oscuro;
+                    }
+                }
+            }
+        }
+    }
+}

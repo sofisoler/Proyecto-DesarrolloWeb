@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff; }
+  body li {
+    list-style-type: none; }
+  body a {
+    text-decoration: none;
+    color: #ffffff; }
+    body a:hover {
+      color: #b4b4b4; }
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "main" "footer"; }
+
+.header {
+  grid-area: header; }
+
+.sticky {
+  background-color: #080808;
+  position: sticky;
+  top: 0px;
+  z-index: 1000; }
+
+.main {
+  grid-area: main;
+  padding: 2rem; }
+
+.footer {
+  grid-area: footer;
+  background-color: #080808;
+  text-align: left;
+  padding: 2rem;
+  padding-left: 0; }
+  .footer .row li {
+    display: inline-block;
+    border-left: solid 1px #737373;
+    cursor: default; }
+    .footer .row li.logo {
+      border: none; }
+    .footer .row li p {
+      font-weight: 600; }
+    .footer .row li form .email {
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+      border: none;
+      outline: none; }
+    .footer .row li form .boton {
+      background-color: #000000;
+      color: #ffffff;
+      border: 1px solid #737373;
+      margin: 0.3rem; }
+      .footer .row li form .boton:hover {
+        background-color: #737373; }
+
+main .carrusel {
+  padding-bottom: 2rem; }
+  main .carrusel .carousel {
+    width: 50%;
+    margin: auto; }
+    main .carrusel .carousel-inner:hover {
+      opacity: 0.8; }
+
+main .destacados h1 {
+  cursor: default;
+  text-align: center;
+  font-size: 1.8rem; }
+
+main .destacados .tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  main .destacados .tarjetas .card {
+    width: 12rem; }
+    main .destacados .tarjetas .card:hover {
+      border: 2px solid #737373; }
+    main .destacados .tarjetas .card .card-img-top {
+      padding: 0.3rem; }
+    main .destacados .tarjetas .card .card-body {
+      display: none;
+      position: absolute;
+      text-align: end; }
+      main .destacados .tarjetas .card .card-body a {
+        background-color: #000000;
+        border: 2px solid #737373;
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 5px; }
+        main .destacados .tarjetas .card .card-body a:hover {
+          color: #ffffff;
+          background-color: #737373; }
+    main .destacados .tarjetas .card:hover .card-body {
+      display: block;
+      background-color: #ffffff60;
+      width: 100%; }
+
+main section .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  main section .formulario h1 {
+    cursor: default;
+    font-size: 1.8rem; }
+  main section .formulario input {
+    display: block;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border: none;
+    outline: none; }
+  main section .formulario div {
+    padding-bottom: 0.5rem; }
+  main section .formulario .boton {
+    padding-top: 0.5rem; }
+    main section .formulario .boton input {
+      display: inline-block;
+      width: 5rem;
+      background-color: #000000;
+      color: #ffffff;
+      border: 1px solid #737373; }
+      main section .formulario .boton input:hover {
+        background-color: #737373; }
+
+main section div .lead {
+  cursor: default;
+  text-align: center;
+  font-size: 1rem; }
+
+main .busqueda {
+  text-align: center; }
+  main .busqueda input {
+    background-color: #000000;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #b4b4b4; }
+  main .busqueda ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 0.8rem; }
+    main .busqueda ul li a {
+      color: #737373; }
+      main .busqueda ul li a:active {
+        color: #ffffff; }
+  main .busqueda__imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .busqueda__imagenes img {
+      width: 13rem;
+      height: 15rem;
+      padding: 0.2rem; }
+      main .busqueda__imagenes img:hover {
+        opacity: 0.6;
+        border: 2px solid #737373; }
+
+@media only screen and (max-width: 768px) {
+  main .carrusel .carousel {
+    width: 100%; } }
+
+@media only screen and (max-width: 576px) {
+  main .destacados .tarjetas .card {
+    width: 8rem; } }
+
+@media only screen and (max-width: 768px) {
+  main .busqueda__imagenes img {
+    width: 9rem;
+    height: 11rem; } }

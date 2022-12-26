@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $color-negro;
+    color: $color-blanco;
+    li {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        color: $color-blanco;
+        &:hover {
+            color: $color-gris-claro;
+        }
+    }
+}

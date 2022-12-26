@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-desarrolloweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss styles/styles.scss styles/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofisoler/Proyecto-DesarrolloWeb.git"
+  },
+  "author": "Sofia Soler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sofisoler/Proyecto-DesarrolloWeb/issues"
+  },
+  "homepage": "https://github.com/sofisoler/Proyecto-DesarrolloWeb#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
